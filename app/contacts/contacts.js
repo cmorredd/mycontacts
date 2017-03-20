@@ -16,10 +16,10 @@ angular.module('myContacts.contacts', ['ngRoute','firebase'])
 
 	 var ref = firebase.database().ref();
   // download the data into a local object
-  $scope.contacts = $firebaseObject(ref);
+  //$scope.contacts = $firebaseObject(ref);
 
 	// get Contacts
-	//$scope.contacts = $firebaseArray(ref);
+	$scope.contacts = $firebaseArray(ref);
 	//console.log($scope.contacts);
 
 	// Show Add Form
